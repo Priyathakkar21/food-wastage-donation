@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodShare - Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar">
+
+    <h2>🍱 FoodShare</h2>
+
+    <div>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="donate.html">Donate Food</a>
+
+        <a href="donations.html">Donations</a>
+
+        <a href="history.html">History</a>
+
+        <a href="profile.html">Profile</a>
+
+        <!-- ADMIN MENU -->
+        <a href="admin.html" id="adminMenu" style="display: none;">
+            Admin
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+    <main class="form-page">
+
+        <div class="donation-form">
+
+            <h1>📞 Contact FoodShare</h1>
+
+            <p>
+                Have a question or suggestion?
+            </p>
+
+            <form>
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                >
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                >
+
+                <label>Message</label>
+
+                <textarea
+                    placeholder="Enter your message..."
+                ></textarea>
+
+                <button type="button" onclick="alert('Thank you for contacting FoodShare!')">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

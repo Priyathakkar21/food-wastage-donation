@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FoodShare - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <h2>🍱 FoodShare</h2>
+
+    <div>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="donate.html">
+            Donate Food
+        </a>
+
+        <a href="donations.html">
+            Donations
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+
+        <!-- ADMIN MENU -->
+
+        <a
+            href="admin.html"
+            id="adminMenu"
+            style="display: none;"
+        >
+            Admin
+        </a>
+
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= MAIN DASHBOARD ================= -->
+
+<main class="dashboard">
+
+
+    <!-- ================= WELCOME ================= -->
+
+    <section class="welcome">
+
+        <h1>
+
+            Welcome,
+
+            <span id="userName">
+                User
+            </span>!
+
+        </h1>
+
+
+        <p>
+
+            Help reduce food waste and support people in need.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+
+        <div class="stat-card">
+
+            <h3>🍚</h3>
+
+            <h2 id="donationCount">
+                0
+            </h2>
+
+            <p>
+                Food Donations
+            </p>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <h3>♻️</h3>
+
+            <h2>
+                Reduce
+            </h2>
+
+            <p>
+                Food Waste
+            </p>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <h3>❤️</h3>
+
+            <h2>
+                Help
+            </h2>
+
+            <p>
+                People in Need
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= DONATE BUTTON ================= -->
+
+    <div class="dashboard-buttons">
+
+        <a
+            href="donate.html"
+            class="big-button"
+        >
+
+            🍱 Donate Food
+
+        </a>
+
+    </div>
+
+
+
+    <!-- ================= AVAILABLE FOOD ================= -->
+
+    <section class="donations-section">
+
+        <h2>
+            Available Food Donations
+        </h2>
+
+
+        <p>
+
+            View all available food donations and collect food
+            from the Donations page.
+
+        </p>
+
+
+        <div class="dashboard-buttons">
+
+            <a
+                href="donations.html"
+                class="big-button"
+            >
+
+                🍱 View Donations
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOD REQUESTS ================= -->
+
+    <section
+        class="donations-section"
+        style="margin-top: 25px;"
+    >
+
+
+        <h2>
+            📋 Food Requests
+        </h2>
+
+
+        <p style="margin-bottom: 20px;">
+
+            NGOs can request your donated food.
+            You can accept or reject their requests here.
+
+        </p>
+
+
+        <!-- JavaScript will display requests here -->
+
+        <div id="requestsList">
+
+            <p>
+                Loading requests...
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+</main>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

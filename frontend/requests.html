@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodShare - My Requests</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>🍱 FoodShare</h2>
+
+        <div>
+            <a href="ngo-dashboard.html">NGO Dashboard</a>
+            <a href="donations.html">Available Food</a>
+            <a href="requests.html">My Requests</a>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </nav>
+
+
+    <main class="dashboard">
+
+        <section class="welcome">
+
+            <h1>📋 My Food Requests</h1>
+
+            <p>
+                Here you can see the food donations you have requested.
+            </p>
+
+        </section>
+
+
+        <section class="donations-section">
+
+            <h2>My Requests</h2>
+
+            <div id="requestsList">
+                Loading requests...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

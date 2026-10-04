@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodShare - Admin Panel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar">
+
+    <h2>🍱 FoodShare</h2>
+
+    <div>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="donate.html">Donate Food</a>
+
+        <a href="donations.html">Donations</a>
+
+        <a href="history.html">History</a>
+
+        <a href="profile.html">Profile</a>
+
+        <!-- ADMIN MENU -->
+        <a href="admin.html" id="adminMenu" style="display: none;">
+            Admin
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+    <main class="dashboard">
+
+        <section class="welcome">
+
+            <h1>🛡️ Admin Dashboard</h1>
+
+            <p>
+                Manage and monitor all food donations.
+            </p>
+
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>🍱</h3>
+
+                <h2 id="totalDonations">
+                    0
+                </h2>
+
+                <p>
+                    Total Donations
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>🟢</h3>
+
+                <h2 id="availableDonations">
+                    0
+                </h2>
+
+                <p>
+                    Available Donations
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>♻️</h3>
+
+                <h2 id="collectedDonations">
+                    0
+                </h2>
+
+                <p>
+                    Collected Donations
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="donations-section">
+
+            <h2>Donation Management</h2>
+
+            <div id="adminDonations">
+                Loading donations...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

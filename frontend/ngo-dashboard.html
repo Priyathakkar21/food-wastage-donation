@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodShare - NGO Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>🍱 FoodShare</h2>
+
+        <div>
+            <a href="ngo-dashboard.html">NGO Dashboard</a>
+            <a href="donations.html">Available Food</a>
+            <a href="requests.html">My Requests</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </nav>
+
+
+    <main class="dashboard">
+
+        <section class="welcome">
+
+            <h1>Welcome, NGO! 🌱</h1>
+
+            <p>
+                Find available food donations and request food
+                for people who need it.
+            </p>
+
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3 id="availableCount">0</h3>
+                <h2>Available Food</h2>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="requestCount">0</h3>
+                <h2>My Requests</h2>
+            </div>
+
+        </section>
+
+
+        <div class="dashboard-buttons">
+
+            <a href="donations.html" class="big-button">
+                🍱 View Available Food
+            </a>
+
+            <a href="requests.html" class="big-button">
+                📋 My Requests
+            </a>
+
+        </div>
+
+
+        <section class="donations-section">
+
+            <h2>Available Food Donations</h2>
+
+            <div id="ngoDonationsList">
+                Loading food donations...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
